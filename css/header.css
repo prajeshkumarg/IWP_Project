@@ -1,3 +1,15 @@
+
+[LAYOUT]
+
+* body
+  + Header / header
+  + Page Content / .page-content .name-page
+        + Section Layouts / section .name-section
+        ...
+  + Footer / footer
+
+
+
 @font-face {
   font-family: Montserrat-Regular;
   src: url('../fonts/montserrat/Montserrat-Regular.ttf'); 
@@ -38,7 +50,9 @@
   src: url('../fonts/poppins/Poppins-Black.ttf'); 
 }
 
-
+/*[ RESTYLE TAG ]
+///////////////////////////////////////////////////////////
+*/
 * {
 	margin: 0px; 
 	padding: 0px; 
@@ -103,6 +117,10 @@ textarea {
   outline: none;
 }
 
+/* textarea:focus, input:focus {
+  border-color: transparent !important;
+} */
+
 input:focus::-webkit-input-placeholder { color:transparent; }
 input:focus:-moz-placeholder { color:transparent; }
 input:focus::-moz-placeholder { color:transparent; }
@@ -138,7 +156,13 @@ iframe {
   outline: none !important;
 }
 
-/* loading effect */
+
+
+
+
+/*[ LOADDING ]
+///////////////////////////////////////////////////////////
+*/
 .animsition-loading-1 {
   position: absolute;
   top: 50%;
